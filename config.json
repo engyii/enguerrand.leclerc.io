@@ -1,5 +1,11 @@
 {
-   "baseurl": "http://replace-this-with-your-hugo-site.com/",
-   "languageCode": "en-us",
-   "title": "My New Hugo Site"
+    "baseurl": "https://enguerrand.leclerc.io/",
+    "languageCode": "en-us",
+    "title": " ",
+    "theme": "hugo-identity-theme",
+
+    "params": {
+        "name": "Jane Doe",
+        "position": "Front End Developper"
+    }
 }
