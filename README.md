@@ -2,4 +2,4 @@
 
 source code for enguerrand.leclerc.io
 
-Copyright 2016 Enguerrand Leclerc 
+Copyright 2016 Enguerrand Leclerc
