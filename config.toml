@@ -1,0 +1,4 @@
+baseURL = "https://enguerrand.leclerc.io"
+languageCode = "en-us"
+title = "Enguerrand Leclerc"
+theme = "identity"
