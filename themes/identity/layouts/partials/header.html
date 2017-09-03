@@ -16,7 +16,7 @@
   {{ end }}
   <link rel="apple-touch-icon-precomposed" href="/images/icons/{{ .Site.Params.appleicon  }}" />
 
-  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link defer rel="stylesheet" href="/assets/css/main.css" />
 
   {{ if not .Site.Params.custom_background }}
     <link rel="stylesheet" href="/assets/css/page.css" />
@@ -27,7 +27,7 @@
   {{ end }}
 
   {{ range .Site.Params.custom_css }}
-    <link rel="stylesheet" href="{{ . | absURL }}">
+    <link defer rel="stylesheet" href="{{ . | absURL }}">
   {{ end }}
 
   <!--[if lte IE 8]><script src="/assets/js/html5shiv.js"></script><![endif]-->

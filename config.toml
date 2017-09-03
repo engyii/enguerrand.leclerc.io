@@ -22,13 +22,13 @@ theme = "identity"
 
   # Link custom assets relative to /static
   #custom_js  = [""]
-  custom_css = ["custom.css"]
+  custom_css = []
 
   # Customization switches
   # Overwrite FontAwesome: see icons.css
   #custom_icons = true
   # Overwrite background: see background.css
-  #custom_background = true
+  custom_background = true
 
   # Personal data
   [params.personal]
@@ -41,13 +41,13 @@ theme = "identity"
     # scope = [
     #     "Product team @ [armstrong](http://byarmstrong.com)"
     #   ]
-    biography = """Hey, i’m Enguerrand! I’m a programmer. Currently working in the product team at [armstrong](http://byarmstrong.com).
+    biography = """Hey, I’m Enguerrand! I’m a __programmer__, currently working in the product team at [armstrong](http://byarmstrong.com).
 
-Married 💍, 36 yo, father of one 👧🏼 . I play lot of videogames 🎮 🕹️ 🖱️ , download a considerable amount of podcasts, daily 📻 , and drink loads of ☕ .
+I'm __36__, married and father of one 👧🏼 . I play a lot of __videogames__ 🎮 🕹️ , download a considerable amount of __podcasts__ daily, and drink loads of ☕ .
 
-I love music (particularly 🎹  ) and, sometimes, I blog about discoveries and favorites at [geogaddi.com](https://geogaddi.com).
+I love __music__ (particularly 🎹  ) and, sometimes, I blog about discoveries and favorites at [geogaddi.com](https://geogaddi.com).
 
-enguerrand [ at ] leclerc [ dot ] io
+Contact me : __enguerrand[at]leclerc[dot]io__
 """
 
   # Contact form settings
