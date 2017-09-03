@@ -1,0 +1,68 @@
+
+@media screen {
+    html,
+    body {
+        min-width: 320px;
+    }
+}
+
+body.is-loading *,
+body.is-loading *:before,
+body.is-loading *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(180, 221, 180, 0.9) 0%, rgba(131, 199, 131, 0.89) 17%, rgba(82, 177, 82, 0.88) 33%, rgba(0, 138, 0, 0.86) 67%, rgba(0, 87, 0, 0.85) 100%), url("bg.jpg");
+    background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(180, 221, 180, 0.9) 0%, rgba(131, 199, 131, 0.89) 17%, rgba(82, 177, 82, 0.88) 33%, rgba(0, 138, 0, 0.86) 67%, rgba(0, 87, 0, 0.85) 100%), url("bg.jpg");
+    background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(180, 221, 180, 0.9) 0%, rgba(131, 199, 131, 0.89) 17%, rgba(82, 177, 82, 0.88) 33%, rgba(0, 138, 0, 0.86) 67%, rgba(0, 87, 0, 0.85) 100%), url("bg.jpg");
+    background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(180, 221, 180, 0.9) 0%, rgba(131, 199, 131, 0.89) 17%, rgba(82, 177, 82, 0.88) 33%, rgba(0, 138, 0, 0.86) 67%, rgba(0, 87, 0, 0.85) 100%), url("bg.jpg");
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: 100px 100px, cover, cover;
+    background-position: top left, center center, bottom center;
+    background-attachment: fixed, fixed, fixed;
+}
+
+body:after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    opacity: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(180, 221, 180, 0.9) 0%, rgba(131, 199, 131, 0.89) 17%, rgba(82, 177, 82, 0.88) 33%, rgba(0, 138, 0, 0.86) 67%, rgba(0, 87, 0, 0.85) 100%);
+    background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(180, 221, 180, 0.9) 0%, rgba(131, 199, 131, 0.89) 17%, rgba(82, 177, 82, 0.88) 33%, rgba(0, 138, 0, 0.86) 67%, rgba(0, 87, 0, 0.85) 100%);
+    background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(180, 221, 180, 0.9) 0%, rgba(131, 199, 131, 0.89) 17%, rgba(82, 177, 82, 0.88) 33%, rgba(0, 138, 0, 0.86) 67%, rgba(0, 87, 0, 0.85) 100%);
+    background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(180, 221, 180, 0.9) 0%, rgba(131, 199, 131, 0.89) 17%, rgba(82, 177, 82, 0.88) 33%, rgba(0, 138, 0, 0.86) 67%, rgba(0, 87, 0, 0.85) 100%);
+    background-repeat: repeat, no-repeat;
+    background-size: 100px 100px, cover;
+    background-position: top left, center center;
+    -moz-transition: opacity 1.75s ease-out;
+    -webkit-transition: opacity 1.75s ease-out;
+    -ms-transition: opacity 1.75s ease-out;
+    transition: opacity 1.75s ease-out;
+}
+
+body.is-loading:after {
+    opacity: 1;
+}
+
+
+/*# sourceMappingURL=page.css.map */

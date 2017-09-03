@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("source-sans-pro-300-family.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 /*
 	Identity by HTML5 UP
 	html5up.net | @n33co
@@ -35,6 +35,7 @@ table {
   border-spacing: 0; }
 
 body {
+  font-size:150% !important;
   -webkit-text-size-adjust: none; }
 
 /* Box Model */
@@ -49,15 +50,15 @@ body, input, select, textarea {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 14pt;
   font-weight: 300;
-  line-height: 2;
-  letter-spacing: 0.2em; }
+  line-height: 1.5;
+   }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
       font-size: 11pt; } }
   @media screen and (max-width: 480px) {
     body, input, select, textarea {
       font-size: 10pt;
-      line-height: 1.75; } }
+      line-height: 1.3; } }
 
 a {
   -moz-transition: color 0.2s ease, border-color 0.2s ease;
@@ -65,15 +66,17 @@ a {
   -ms-transition: color 0.2s ease, border-color 0.2s ease;
   transition: color 0.2s ease, border-color 0.2s ease;
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+border-bottom: 2px solid #52b152 }
   a:before {
     -moz-transition: color 0.2s ease, text-shadow 0.2s ease;
     -webkit-transition: color 0.2s ease, text-shadow 0.2s ease;
     -ms-transition: color 0.2s ease, text-shadow 0.2s ease;
     transition: color 0.2s ease, text-shadow 0.2s ease; }
   a:hover {
-    color: #ff7496;
-    text-decoration: underline; }
+    color: #fff;
+    background-color: #52b152;
+    text-decoration: none; }
 
 strong, b {
   color: #313f47; }
@@ -93,11 +96,10 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none; }
 
 h1 {
-  font-size: 1.85em;
-  letter-spacing: 0.22em;
+  font-size: 2em;
+  letter-spacing: -0.035em;
   margin: 0 0 0.525em 0; }
-  h1.name {
-    text-transform: uppercase; }
+
 
 h2 {
   font-size: 1.5em; }
@@ -129,7 +131,7 @@ sup {
 
 hr {
   border: 0;
-  border-bottom: solid 1px #c8cccf;
+  border-bottom: solid 1px #9EA3A2;
   margin: 1.5em 0; }
 
 /* Form */
@@ -157,7 +159,7 @@ textarea {
   -ms-appearance: none;
   appearance: none;
   border-radius: 4px;
-  border: solid 1px #c8cccf;
+  border: solid 1px #9EA3A2;
   color: inherit;
   display: block;
   outline: 0;
@@ -177,7 +179,7 @@ textarea {
   input[type="tel"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #ff7496; }
+    border-color: #52b152; }
 
 .select-wrapper {
   text-decoration: none;
@@ -192,7 +194,7 @@ textarea {
     font-weight: normal;
     text-transform: none !important; }
   .select-wrapper:before {
-    color: #c8cccf;
+    color: #9EA3A2;
     display: block;
     height: 2.75em;
     line-height: 2.75em;
@@ -248,7 +250,7 @@ input[type="radio"] {
     input[type="checkbox"] + label:before,
     input[type="radio"] + label:before {
       border-radius: 4px;
-      border: solid 1px #c8cccf;
+      border: solid 1px #9EA3A2;
       content: '';
       display: inline-block;
       height: 1.65em;
@@ -260,11 +262,11 @@ input[type="radio"] {
       width: 1.65em; }
   input[type="checkbox"]:checked + label:before,
   input[type="radio"]:checked + label:before {
-    color: #ff7496;
+    color: #52b152;
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
-    border-color: #ff7496; }
+    border-color: #52b152; }
 
 input[type="checkbox"] + label:before {
   border-radius: 4px; }
@@ -326,7 +328,7 @@ ul {
   ul.alt {
     padding-left: 0; }
     ul.alt li {
-      border-top: solid 1px #c8cccf;
+      border-top: solid 1px #9EA3A2;
       padding: 0.5em 0; }
       ul.alt li:first-child {
         border-top: 0;
@@ -345,7 +347,7 @@ ul {
         width: 3.75em;
         height: 3.75em;
         border-radius: 100%;
-        border: solid 1px #c8cccf;
+        border: solid 1px #9EA3A2;
         line-height: 3.75em;
         overflow: hidden;
         text-align: center;
@@ -360,9 +362,10 @@ ul {
           text-transform: none !important; }
         ul.icons li a:before {
           color: #ffffff;
-          text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf; }
+          text-shadow: 1.25px 0px 0px #9EA3A2, -1.25px 0px 0px #9EA3A2, 0px 1.25px 0px #9EA3A2, 0px -1.25px 0px #9EA3A2; }
         ul.icons li a:hover:before {
-          text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496; }
+          content:"" !important;
+          text-shadow: 1.25px 0px 0px #52b152, -1.25px 0px 0px #52b152, 0px 1.25px 0px #52b152, 0px -1.25px 0px #52b152; }
         ul.icons li a:before {
           position: absolute;
           top: 0;
@@ -374,7 +377,13 @@ ul {
           text-align: center;
           text-indent: 0; }
         ul.icons li a:hover {
-          border-color: #ff7496; }
+          text-indent: inherit;
+          color: #ffffff;
+          font-size: 0.5em;
+          width: 7.5em !important;
+          height: 7.5em ! important;
+          line-height: 7.5em;
+          border-color: #52b152; }
     @media screen and (max-width: 480px) {
       ul.icons li a:before {
         font-size: 1.5rem; } }
@@ -417,7 +426,7 @@ button,
   padding: 0 1.5em;
   background-color: transparent;
   border-radius: 4px;
-  border: solid 1px #c8cccf;
+  border: solid 1px #9EA3A2;
   color: #414f57 !important;
   cursor: pointer;
   text-align: center;
@@ -428,8 +437,8 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    border-color: #ff7496;
-    color: #ff7496 !important; }
+    border-color: #52b152;
+    color: #52b152 !important; }
   input[type="submit"].icon,
   input[type="reset"].icon,
   input[type="button"].icon,
@@ -484,7 +493,7 @@ button,
   min-width: 27em;
   padding: 4.5em 3em 3em 3em ;
   background: #ffffff;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: default;
   opacity: 0.95;
   text-align: center;
@@ -508,6 +517,7 @@ button,
       display: block;
       margin: 0 auto;
       border-radius: 100%;
+      border:4px solid #52b152;
       box-shadow: 0 0 0 1.5em #ffffff; }
     #main .avatar:before {
       content: '';
@@ -518,7 +528,7 @@ button,
       width: calc(100% + 6em);
       height: 1px;
       z-index: -1;
-      background: #c8cccf; }
+      background: #9EA3A2; }
   #main .name {
     font-weight: bold; }
   #main .location {
@@ -531,6 +541,7 @@ button,
   @media screen and (max-width: 480px) {
     #main {
       min-width: 0;
+      max-width: 100%;
       width: 100%;
       padding: 4em 2em 2.5em 2em ; }
       #main .avatar:before {
@@ -557,7 +568,7 @@ button,
   #footer .copyright {
     margin: 0;
     padding: 0;
-    font-size: 0.9em;
+    font-size: 0.7em;
     list-style: none; }
     #footer .copyright li {
       display: inline-block;
