@@ -1,9 +1,11 @@
 baseURL = "https://enguerrand.leclerc.io"
 languageCode = "en-us"
 title = "Enguerrand Leclerc"
+description = "Enguerrand Leclerc is doing UX Design and Front-End development in Paris. Learn more about me !"
 theme = "identity"
 
 [params]
+  description = "Enguerrand Leclerc is doing UX Design and Front-End development in Paris. Learn more about me !"
 
   # Images settings
   # Icons, backgrounds and avatars folders are placed in theme's static/images folder.
@@ -168,7 +170,7 @@ Contact me : __enguerrand[at]leclerc[dot]io__
   # Footer settings
   [params.footer]
     # If copyright is not set, author is used
-    copyright = "Enguerrand Leclerc"
+    copyright = "Enguerrand Leclerc | Powered by hugo"
 
   # Page license
   # [params.license]
