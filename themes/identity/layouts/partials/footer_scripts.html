@@ -1,11 +1,5 @@
 <!-- Scripts -->
 <!--[if lte IE 8]><script src="/js/respond.min.js"></script><![endif]-->
-<script>
-  if ('addEventListener' in window) {
-    window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-    document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-  }
-</script>
 
 {{ if .Site.Params.contact.enable }}
   {{ "<!-- Form Validation -->" | safeHTML }}
@@ -13,12 +7,6 @@
   <script src="{{ "assets/js/bootstrap-v3.3.7/bootstrap.min.js" | absURL }}" async defer></script>
   <script src="{{ "assets/js/jquery.form-validator-v2.3.44/jquery.form-validator.min.js" | absURL }}" async defer></script>
   <script src="{{ "assets/js/contact.js" | absURL }}" async defer></script>
-{{ end }}
-
-{{ template "_internal/google_analytics_async.html" . }}
-
-{{ if .Site.Params.analytics.piwik }}
-  {{ partial "_analytics/piwik.html" . }}
 {{ end }}
 
 {{ range .Site.Params.custom_js }}
