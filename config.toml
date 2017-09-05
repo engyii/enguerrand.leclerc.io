@@ -1,7 +1,9 @@
 baseURL = "https://enguerrand.leclerc.io"
 languageCode = "en-us"
 title = "Enguerrand Leclerc"
-theme = "identity"
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableRobotsTXT = true
 
 [params]
   description = "Enguerrand Leclerc is doing UX Design and Front-End development in Paris. Learn a little more about him !"
@@ -21,15 +23,6 @@ theme = "identity"
   #favicon_png_sizes = "96x96"
   #favicon_svg = "favicon.svg"
 
-  # Link custom assets relative to /static
-  #custom_js  = [""]
-  custom_css = []
-
-  # Customization switches
-  # Overwrite FontAwesome: see icons.css
-  #custom_icons = true
-  # Overwrite background: see background.css
-  custom_background = true
 
   # Personal data
   [params.personal]
@@ -44,59 +37,12 @@ theme = "identity"
     #   ]
     biography = """Hey, I’m Enguerrand! I’m a __programmer__, currently working in the product team at [armstrong](http://byarmstrong.com).
 
-I'm __36__, married and father of one 👧🏼 . I play a lot of __videogames__ 🎮 🕹️ , download a considerable amount of __podcasts__ daily, and drink loads of ☕ .
+I'm __36__, married and father of one 👧🏼 . I play a lot of __videogames__ 🎮 🕹️ , download a considerable amount of __podcasts__ daily, and drink loads of ☕.
 
-I love __music__ (particularly 🎹  ) and, sometimes, I blog about discoveries and favorites at [geogaddi.com](https://geogaddi.com).
+I love __music__ (particularly 🎹 ) and, sometimes, I blog about discoveries and favorites at [geogaddi.com](https://geogaddi.com).
 
-Contact me : __enguerrand[at]leclerc[dot]io__
+Contact me at __enguerrand[at]leclerc[dot]io__ or find me on the internet here :
 """
-
-  # Contact form settings
-
-  [params.contact]
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-
-    email = "contact@leclerc.io"
-
-    # It is possible to substitute formspring with other providers
-    # as an example the mailout plugin from caddy.
-    # Provide the post URL for the form and depending on the provider
-    # add some custom JS script to finish the implementation.
-
-    #postURL = "https://example.com/mailout/"
-
-    enable = false
-    title = "Touch Me!"
-    namePlaceholder = "Name"
-    emailPlaceholder = "Email"
-    messagePlaceholder = "Message"
-    buttonText = "Send it"
-    success = "Thank you for contacting us."
-    error = "Message could not be send. Please contact us at "
-
-    # Google invisible captcha
-    #[params.contact.captcha]
-    #  sitekey = ""
-
-
-    # Add optional form fields to identify contact forms.
-    #[[params.contact.fields.hidden]]
-    #  name = "someID"
-    #  value = "example.com"
-
-    #[[params.contact.fields.hidden]]
-    # Special values for name such as "page" and "site" will be autofilled
-    #  name = "page"
 
   # Social settings
   # You may change these with your social links or add others
