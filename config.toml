@@ -35,13 +35,15 @@ enableRobotsTXT = true
     # scope = [
     #     "Product team @ [armstrong](http://byarmstrong.com)"
     #   ]
-    biography = """Hey, I’m Enguerrand! I’m an independent __programmer__. I've worked for web agencies and, in recent years, I was part of the product team of [armstrong](http://byarmstrong.com).
+    biography = """Hey, I’m _Enguerrand_! I’m an __independent programmer__.
+
+In the past, I've occupied various position at __web agencies__ and, more recently, I was part of the product team at __[armstrong](http://byarmstrong.com)__.
 
 I'm __37__, married and father of one 👧🏼 . I play a lot of __videogames__ 🎮 🕹️ , download a considerable amount of __podcasts__ daily, and drink loads of ☕.
 
-I love __music__ (particularly 🎹 ) and, sometimes, I blog about discoveries and favorites at [geogaddi.com](https://geogaddi.com).
+I love __music__ (particularly 🎹 ) and, sometimes, I blog about discoveries and favorites at __[geogaddi.com](https://geogaddi.com)__.
 
-I'm currently available for new technology related project so contact me at __enguerrand[at]leclerc[dot]io__. you can also find me on the internet here :
+I'm _currently available_ for new technology-related project. You can contact me at __enguerrand[at]leclerc[dot]io__ or find me on internet here or there :
 """
 
   # Social settings

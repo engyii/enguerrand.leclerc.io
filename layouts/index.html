@@ -2,8 +2,9 @@
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <html>
   {{ partial "header.html" . }}
-  <body class="">
-
+  <body class=""  itemscope itemtype="https://schema.org/Person">
+    <meta itemprop="image" content="/assets/images/engy3.jpg" />
+    <meta itemprop="url" content="https://enguerrand.leclerc.io" />
     <!-- Wrapper -->
       <div id="wrapper">
 
@@ -14,7 +15,7 @@
             </aside>
             <section>
               <header>
-              <h1 class="name">
+              <h1 class="name" itemprop="name">
                 {{ with .Site.Params.personal.name }}
                   {{ . }}
                 {{ else }}
@@ -26,7 +27,7 @@
               {{ end }}
 
               {{ with .Site.Params.personal.position }}
-                <h2 class="position">{{ . | markdownify }}</h2>
+                <h2 class="position" itemprop="jobTitle">{{ . | markdownify }}</h2>
               {{ end }}
 
               {{ with .Site.Params.personal.scope }}
@@ -45,7 +46,7 @@
             <footer>
               <ul class="icons">
                 {{ range .Site.Params.social }}
-                  <li><a href="{{ .link }}" class="{{ .icon }}">{{ .title }}</a></li>
+                  <li><a href="{{ .link }}" class="{{ .icon }}" itemprop="sameAs">{{ .title }}</a></li>
                 {{ end }}
               </ul>
               {{ if .Site.Params.contact.enable }}
