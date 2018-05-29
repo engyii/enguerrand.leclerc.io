@@ -37,13 +37,13 @@ enableRobotsTXT = true
     #   ]
     biography = """Hey, I’m _Enguerrand_! I’m an __independent programmer__.
 
-In the past, I've occupied various position at __web agencies__ and, more recently, I was part of the product team at __[armstrong](http://byarmstrong.com)__.
+In the past, I've occupied various positions at __web agencies__ and, more recently, I was part of the product team at __[armstrong](http://byarmstrong.com)__.
 
-I'm __37__, married and father of one 👧🏼 . I play a lot of __videogames__ 🎮 🕹️ , download a considerable amount of __podcasts__ daily, and drink loads of ☕.
+I'm __37__, married and father of one 👧🏼 . I play a lot of __videogames__ 🎮  , download a considerable amount of __podcasts__ daily, and drink loads of ☕.
 
 I love __music__ (particularly 🎹 ) and, sometimes, I blog about discoveries and favorites at __[geogaddi.com](https://geogaddi.com)__.
 
-I'm _currently available_ for new technology-related project. You can contact me at __enguerrand[at]leclerc[dot]io__ or find me on internet here or there :
+I'm currently available for new technology-related project. You can contact me at __enguerrand[at]leclerc[dot]io__ or find me on internet here or there :
 """
 
   # Social settings
@@ -52,6 +52,7 @@ I'm _currently available_ for new technology-related project. You can contact me
   [[params.social]]
     title = "Twitter"
     icon = "fa-twitter"
+    icon2 = ""
     link = "http://twitter.com/engy"
 
   [[params.social]]
@@ -67,6 +68,7 @@ I'm _currently available_ for new technology-related project. You can contact me
   [[params.social]]
     title = "LinkedIn"
     icon = "fa-linkedin"
+    icon2 = "&#xF0E1"
     link = "https://www.linkedin.com/in/enguerrandleclerc/"
 
   [[params.social]]
@@ -77,7 +79,7 @@ I'm _currently available_ for new technology-related project. You can contact me
   [[params.social]]
     title = "Vimeo"
     icon = "fa-vimeo"
-    link = "https://vimeo.com/engy"
+    link = "https://vimeo.com/enguerrandleclerc"
 
   [[params.social]]
     title = "Reddit"
