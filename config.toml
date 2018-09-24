@@ -52,7 +52,6 @@ I'm currently available for new technology-related project. You can contact me a
   [[params.social]]
     title = "Twitter"
     icon = "fa-twitter"
-    icon2 = ""
     link = "http://twitter.com/engy"
 
   [[params.social]]
@@ -68,13 +67,22 @@ I'm currently available for new technology-related project. You can contact me a
   [[params.social]]
     title = "LinkedIn"
     icon = "fa-linkedin"
-    icon2 = "&#xF0E1"
     link = "https://www.linkedin.com/in/enguerrandleclerc/"
 
   [[params.social]]
     title = "Github"
     icon = "fa-github"
     link = "https://github.com/engyii"
+
+  [[params.social]]
+    title = "Dribbble"
+    icon = "fa-dribbble"
+    link = "https://dribbble.com/engy"
+
+  [[params.social]]
+    title = "Behance"
+    icon = "fa-behance"
+    link = "https://www.behance.net/creativeclouda0f0"
 
   [[params.social]]
     title = "Vimeo"
