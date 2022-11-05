@@ -48,6 +48,7 @@
                 {{ range .Site.Params.social }}
                   <li><a href="{{ .link }}" class="{{ .icon }}" itemprop="sameAs">{{ .title }}</a></li>
                 {{ end }}
+                <li><a rel="me" href="https://mastodon.social/@engy" class="fa-mastodon" itemprop="sameAs">Mastodon</a></li>
               </ul>
               {{ if .Site.Params.contact.enable }}
                 {{ partial "contact.html" . }}
