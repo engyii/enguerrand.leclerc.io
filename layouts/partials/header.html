@@ -641,9 +641,17 @@ body {
   font-display: block;
   src: url("/assets/fonts/fa-brands-400.woff2") format("woff2"), url("/assets/fonts/fa-brands-400.ttf") format("truetype"); }
 
-.fab,
+  .fab,
 .fa-brands {
-  font-weight: 400; }
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto; }
 
 .fa-monero:before {
   content: "\f3d0"; }
