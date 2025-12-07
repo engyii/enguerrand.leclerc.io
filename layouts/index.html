@@ -1,64 +1,66 @@
 <!DOCTYPE HTML>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-  {{ partial "header.html" . }}
-  <body class="" itemscope itemtype="https://schema.org/Person">
-    <meta itemprop="image" content="/assets/images/engy3.jpg" />
-    <meta itemprop="url" content="https://enguerrand.leclerc.io" />
-    <!-- Wrapper -->
-      <div id="wrapper">
+{{ partial "header.html" . }}
 
-        <!-- Main -->
-          <section id="main">
-            <aside id="main-photo">
+<body class="" itemscope itemtype="https://schema.org/Person">
+  <meta itemprop="image" content="/assets/images/engy3.jpg" />
+  <meta itemprop="url" content="https://enguerrand.leclerc.io" />
+  <!-- Wrapper -->
+  <div id="wrapper">
 
-            </aside>
-            <section>
-              <header>
-              <h1 class="name" itemprop="name">
-                {{ with .Site.Params.personal.name }}
-                  {{ . }}
-                {{ else }}
-                  {{ .Site.Params.author }}
-                {{ end }}
-              </h1>
-              {{ with .Site.Params.personal.livesIn }}
-                <h5 class=location>Lives in {{ . | markdownify }}</h5>
-              {{ end }}
+    <!-- Main -->
+    <section id="main">
+      <aside id="main-photo">
 
-              {{ with .Site.Params.personal.position }}
-                <h2 class="position" itemprop="jobTitle">{{ . | markdownify }}</h2>
-              {{ end }}
+      </aside>
+      <section>
+        <header>
+          <h1 class="name" itemprop="name">
+            {{ with .Site.Params.personal.name }}
+            {{ . }}
+            {{ else }}
+            {{ .Site.Params.author }}
+            {{ end }}
+          </h1>
+          {{ with .Site.Params.personal.livesIn }}
+          <h5 class=location>Lives in {{ . | markdownify }}</h5>
+          {{ end }}
 
-              {{ with .Site.Params.personal.scope }}
-              <ul>
-                {{ range . }}
-                  <li>{{ . | markdownify }}</li>
-                {{ end }}
-              </ul>
-              {{ end }}
+          {{ with .Site.Params.personal.position }}
+          <h2 class="position" itemprop="jobTitle">{{ . | markdownify }}</h2>
+          {{ end }}
 
-              {{ with .Site.Params.personal.biography }}
-                <span class="biography">{{ . | markdownify }}</span>
-              {{ end }}
-            </header>
+          {{ with .Site.Params.personal.scope }}
+          <ul>
+            {{ range . }}
+            <li>{{ . | markdownify }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
 
-            <footer>
-              <ul class="icons">
-                {{ range .Site.Params.social }}
-                  <li><a href="{{ .link }}" class="fab {{ .icon }}" itemprop="sameAs">{{ .title }}</a></li>
-                {{ end }}
-                <li><a class="fab fa-mastodon" rel="me" href="https://mastodon.social/@engy">Mastodon</a></li>
-              </ul>
-              {{ if .Site.Params.contact.enable }}
-                {{ partial "contact.html" . }}
-              {{ end }}
-            </footer>
-            </section>
-          </section>
+          {{ with .Site.Params.personal.biography }}
+          <span class="biography">{{ . | markdownify }}</span>
+          {{ end }}
+        </header>
 
-        <!-- Footer -->
-          {{ partial "footer.html" . }}
+        <footer>
+          <ul class="icons">
+            {{ range .Site.Params.social }}
+            <li><a href="{{ .link }}" class="fab {{ .icon }}" itemprop="sameAs">{{ .title }}</a></li>
+            {{ end }}
+            <li><a class="fab fa-mastodon" rel="me" href="https://en.gy/@enguerrand">Mastodon</a></li>
+          </ul>
+          {{ if .Site.Params.contact.enable }}
+          {{ partial "contact.html" . }}
+          {{ end }}
+        </footer>
+      </section>
+    </section>
 
-      </div>
-  </body>
+    <!-- Footer -->
+    {{ partial "footer.html" . }}
+
+  </div>
+</body>
+
 </html>
