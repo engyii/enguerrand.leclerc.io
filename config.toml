@@ -100,11 +100,6 @@ I'm currently available for technology-related project. You can contact me at __
     link = "https://pinterest.com/engyii/"
 
   [[params.social]]
-    title = "Spotify"
-    icon = "fa-spotify"
-    link = "https://open.spotify.com/user/engy"
-
-  [[params.social]]
     title = "Goodreads"
     icon = "fa-goodreads"
     link = "https://www.goodreads.com/user/show/6720196-engy"
