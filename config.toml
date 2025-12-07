@@ -2,7 +2,7 @@ baseURL = "https://enguerrand.leclerc.io"
 languageCode = "en-us"
 title = "Enguerrand Leclerc"
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 enableRobotsTXT = true
 
 [params]
